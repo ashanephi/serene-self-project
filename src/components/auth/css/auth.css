@@ -1,0 +1,43 @@
+/* signup && register */
+.auth-input-field{
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;    
+    padding: 10px 0px 10px 10px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;    
+}
+.auth-input-field-text{
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;  
+}
+.auth-form-submit-btn{
+    border-radius: 10px;
+    border: 1px solid #3A5B22;
+    background-color: #3A5B22;
+    display: flex;
+    padding: 10px 0px 10px 10px;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.auth-horizontal-line{
+    background-color: #F5F5F5;
+    height: 2px;
+}
+.auth-or-option-container{
+    padding: 40px;
+    border: 1px dashed #3A5B22;
+}

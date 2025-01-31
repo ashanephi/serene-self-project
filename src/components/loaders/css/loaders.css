@@ -1,0 +1,59 @@
+/* full screen loading  */
+.full-screen-loading-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgb(96, 185, 154, 0.8));;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full-screen-loader {
+    width: 60px;
+    aspect-ratio: 1;
+    background: 
+      linear-gradient(45deg,#60B99A 50%,#0000 0),
+      linear-gradient(45deg,#0000 50%,#60B99A 0),
+      linear-gradient(-45deg,#f77825 50%,#0000 0),
+      linear-gradient(-45deg,#0000 50%,#f77825 0),
+      linear-gradient(#554236 0 0);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    animation: l18 1.5s infinite;
+  }
+  @keyframes l18{
+    0%   {background-position:50% 50%,50% 50%,50%  50% ,50% 50%,50% 50%}
+    25%  {background-position:0  100%,100%  0,50%  50% ,50% 50%,50% 50%}
+    50%  {background-position:0  100%,100%  0,100% 100%,0   0  ,50% 50%}
+    75%  {background-position:50% 50%,50% 50%,100% 100%,0   0  ,50% 50%}
+    100% {background-position:50% 50%,50% 50%,50%  50% ,50% 50%,50% 50%}
+  }
+
+.full-screen-loader::before {
+    content: '';
+    position: absolute;
+    width: 150%; /* Larger than screen to allow smooth transition */
+    height: 150%;
+    top: 50%;
+    left: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 70%);
+    transform: translate(-50%, -50%) scale(0); /* Starts small */
+    border-radius: 50%;
+    animation: ripple-screen-animation 1.5s infinite ease-in-out;
+}
+
+/* Ripple Animation */
+@keyframes ripple-screen-animation {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}

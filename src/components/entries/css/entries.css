@@ -1,0 +1,8 @@
+.add-entry-input::placeholder{
+    color: #D9D9D9;
+    font-family: OpenSans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;    
+}

@@ -1,0 +1,45 @@
+.alert-msg-body{
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-msg-container{
+    border-radius: 20px;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 1px 2.5px 0.59px gray;
+}
+
+/* Fade-in and fade-out animations */
+.alert-msg-fade-in {
+    animation: alertMsgFadeIn 1s forwards;
+  }
+  
+  .alert-msg-fade-out {
+    animation: alertMsgFadeOut 1s forwards;
+  }
+  
+  @keyframes alertMsgFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes alertMsgFadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

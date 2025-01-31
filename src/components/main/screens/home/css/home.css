@@ -1,0 +1,30 @@
+.home-filter-container{
+    background: #FDFBFF;
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.06);  
+    margin-bottom: 30px;  
+}
+.home-input-filter{
+    background: #FFF;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.12);    
+}
+.home-input-search-icon-container{
+    background: #FFF;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.12);    
+}
+.home-single-entry-container{
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.06);   
+    margin-bottom: 20px; 
+}
+.home-book-clip-container{
+    position: absolute;
+    z-index: 100;
+    left: -10px;
+    top: 18px;
+}
+.home-entry-preview-container{
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 4px 4px 10px 6px rgba(0, 0, 0, 0.05);
+}

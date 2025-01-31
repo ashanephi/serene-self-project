@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Poppins;
+  src: url('./assets/fonts/poppins/poppins.ttf');
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('./assets/fonts/openSans/openSans.ttf');
+}
+
+@font-face {
+  font-family: SourceCodePro;
+  src: url('./assets/fonts/sourceCodePro/sourceCodePro.ttf');
+}
+
+@font-face {
+  font-family: Sacramento;
+  src: url('./assets/fonts/sacramento/Sacramento.ttf');
+}
+
+.writing-bg{
+  background-image: url('./assets/images/app/appBg.png');
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input::placeholder{
+  color: #D9D9D9;
+  font-family: Poppins;
+  font-size: 13.5px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+.bg-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button, input, textarea{
+  border: none;
+  outline: none;
+}
+
+input:focus, textarea:focus{
+  outline: none;
+}
